@@ -148,9 +148,39 @@
 //     break
 // }
 
-// 11. even numbers
-for (let i = 0; i <= 10; i++) {
-  if (i % 2 == 0) {
-    console.log(i)
-  }
+// // 11. even numbers
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i)
+//   }
+// }
+
+// // 12. 'for' into 'while'
+// let i = 0
+// while (i < 3) {
+//   alert(`number ${i}!`)
+//   i++
+// }
+
+// // 14. Простые числа
+// let num = 133
+// let perNum
+// for (perNum = 2; perNum < num; perNum++) {
+//   for (let i = 2; i < perNum; i++) {
+//     if (perNum % i === 0) {
+//       break
+//     }
+//     if (i === perNum - 1) {
+//       console.log(perNum)
+//     }
+//   }
+// }
+
+// 15. Подсчёт итераций
+let n = 1000
+let num = 0
+for (let i = 1; n > 50; i++) {
+  n = n / 2
+  num = i
 }
+console.log(`Количество итераций - ${num}, итоговое число - ${n} `)
